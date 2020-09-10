@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #999;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  padding: 0;
+}
+
+.header-box {
+  height: 50px;
+}
+
+.header-box .header {
+  height: 50px;
+  background: #000;
+}
+
+.header-box .title {
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.wrapper .add-task-box {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .add-task-box .task-text {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.wrapper .task-box {
+  width: 1000px;
+  margin: 0 auto 50px;
+  height: 300px;
+  overflow: auto;
+}
+
+.task-box table,
+tr {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+.task-box th {
+  text-align: left;
+}
+
+.task-box td,
+th {
+  padding: 10px 20px;
+}
+
+.task-box .td1 {
+  word-break: break-all;
+  line-height: 26px;
+}
+
+.task-box .td1.active {
+  text-decoration: line-through;
+}
+
+.task-box .td5 {
+  width: 100px;
+  line-height: 26px;
+}
+
+.task-box .td6 {
+  width: 100px;
+  line-height: 26px;
+}
+
+.task-box .td7 {
+  width: 100px;
+  line-height: 26px;
+}
+
+.task-box .taskComplete {
+  background: #666;
+  color: #fff;
+}
+
+.task-box .td2 {
+  width: 200px;
+  line-height: 26px;
+}
+
+.task-box .td3 {
+  width: 200px;
+}
+
+.task-box .remindTime {
+  padding: 0 12px;
+  height: 30px;
+}
+
+.task-box .td4 {
+  width: 100px;
+  line-height: 26px;
+}
+
+.task-box input {
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+/* .overlay.active {
+  display: block;
+} */
+
+.overlay .detailArea {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px;
+}
+
+.overlay .title {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.overlay .detailText {
+  padding: 20px;
+}
+
+.overlay textarea {
+  outline: none;
+}
+
+.overlay .confirmBtn {
+  margin-left: 35%;
+}
